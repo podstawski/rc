@@ -1,0 +1,9 @@
+
+if [ "$1" ]
+then
+	sleep 1
+	kill -14 $1
+
+else
+	$HOME/rc/.cd $PPID &
+fi
