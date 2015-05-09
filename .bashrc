@@ -77,3 +77,4 @@ a=`ssh-agent`
 eval $a
 ssh-add
 
+git config --global credential.helper 'cache --timeout=7200'
