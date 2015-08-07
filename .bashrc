@@ -18,7 +18,7 @@ fi
 # Put your fun stuff here.TIC-II
 
 #export PGPASSWORD=chuj
-for db in `psql -l -t -q | awk '{if (length($1)>2) print $1}' | grep -v template` ; do alias $db="psql -d $db"; done
+#for db in `psql -l -t -q | awk '{if (length($1)>2) print $1}' | grep -v template` ; do alias $db="psql -d $db"; done
 
 export JAVA_HOME=/opt/jdk/jdk1.8.0_25
 alias studio="/www/android/android-studio/bin/studio.sh"
@@ -50,7 +50,8 @@ alias picassa="rdesktop -u pudel -p spierdalaj  -r clipboard:CLIPBOARD -g 1280x9
 
 alias safari="ssh root@safari.gammanet.pl"
 alias kier="ssh root@kier.gammanet.pl"
-alias grajek="vncviewer grajek"
+alias epapubeta="mysql -h 173.194.224.182 -u epapu -p epapubeta"
+alias kiedymsza="mysql -h 173.194.224.182 -u kiedymsza -p podstawski"
 
 alias ecco="ssh -p 2222 gammanet@92.43.112.53"
 alias ecco2="ssh -p 2223 gammanet@193.108.35.70"
