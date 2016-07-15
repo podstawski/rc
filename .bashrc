@@ -74,8 +74,8 @@ trap $HOME/rc/.cd.trap 14
 alias crystal="rdesktop -u gammanet -p html#OK -r clipboard:CLIPBOARD -g 1280x900 crystal.gammanet.pl"
 
 
-a=`ssh-agent`
-eval $a
-ssh-add
+#a=`ssh-agent`
+#eval $a
+#ssh-add
 
 git config --global credential.helper 'cache --timeout=7200'
